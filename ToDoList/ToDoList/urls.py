@@ -20,11 +20,12 @@ from django.urls import path, include
 path('admin/', admin.site.urls) -> It means that client access 'admin/' in browser,
 connect client to 'admin.site.urls'
 
-admin -> default page function by django
+admin -> default page functioned by django
 '' -> same 127.0.0.1:8000
 
 """
 urlpatterns = [
-    path('admin/', admin.site.urls),
+	path('admin/', admin.site.urls),
 	path('', include('my_to_do_app.urls'))
+	
 ]
